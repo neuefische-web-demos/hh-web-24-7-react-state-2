@@ -31,7 +31,6 @@ const topics = [
 export default function SearchResults({ searchTerm = "" }) {
   const results = topics.filter((topic) => topic.includes(searchTerm));
 
-
   return (
     <div style={{ border: "1px solid blue" }}>
       {!searchTerm || !results.length ? (
